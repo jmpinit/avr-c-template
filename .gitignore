@@ -1,0 +1,5 @@
+# intermediate compilation results
+*.o
+*.out
+*.map
+*.hex
