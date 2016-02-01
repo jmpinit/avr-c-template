@@ -39,7 +39,7 @@ else
 endif
 
 flash: $(HEX)
-	avrdude -y -c $(PROGRAMMER) -p $(MCU_AVRDUDE) -U flash:w:$(HEX)
+	avrdude -c $(PROGRAMMER) -p $(MCU_AVRDUDE) -U flash:w:$(HEX)
 
 $(HEX): $(OUT)
 	$(OBJCOPY) -R .eeprom -O ihex $< $@
